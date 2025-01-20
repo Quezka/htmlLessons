@@ -1,0 +1,110 @@
+/* rgb(40,81,227) -- Синий
+   rgb(239,243,253)  -- Голубой */
+
+
+h1, h2, p {
+    margin: 0;
+}
+
+body {
+    margin: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-item {
+    width: 508px;
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.list-item-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: rgb(239,243,253);
+    border-radius: 50%;
+}
+
+.list-item-number-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(40,81,227);
+}
+
+.list-item-text {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 16px;
+}
+
+.list-item-text-h2 {
+    font-size: 22px;
+}
+
+.list-item-text-p {
+    font-size: 16px;
+    color: #616161;
+}
+
+.pres {
+    align-self: center;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.pres-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.pres-heading-p {
+    color: #616161;
+    font-size: 20px;
+}
+
+.pres-heading-h1 {
+    font-size: 56px;
+}
+
+.pres-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pres-content-item {
+    width: 356px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+}
+
+.pres-content-item-h2 {
+    font-size: 24px;
+}
+
+.pres-content-item-p {
+    max-width: 338px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.46px;
+    color: #616161;
+    font-size: 16px;
+    text-align: center;
+}

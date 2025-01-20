@@ -1,0 +1,44 @@
+/* 
+    Grey - #6b6b6b
+    Card Colour - #f8f8f8
+    PFP Size: 64px*64px
+    Card Size: w: 352, h: variable    
+    h1 weight: 500, size: 44
+    p heading weight: 300, size: 24 
+    card border-radius: 30p
+    card content padding: left&right: 24px, top&bottom: 32px;
+    star size: 22 * 21.18 (22x22)
+    gap between stars: 6px
+    разделение отзыва - <br>
+    отзыв серая часть - 12px - weight 300
+    отзыв текст - 16px на 300 weight
+*/
+
+h1, h2, p {
+    margin: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-header-title {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.reviews-header-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+}
