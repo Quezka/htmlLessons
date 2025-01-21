@@ -19,12 +19,18 @@ h1, h2, p {
 }
 
 body {
-    margin: 20px;
+    margin: 100px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .reviews {
     display: flex;
     flex-direction: column;
+    gap: 100px;
 }
 
 .reviews-header {
@@ -41,4 +47,69 @@ body {
 .reviews-header-subtitle {
     font-size: 24px;
     font-weight: 300;
+    color: #6b6b6b;
+}
+
+.reviews-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews-content-item {
+    min-width: 352px;
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 32px 24px 32px 24px;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.reviews-content-item-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviews-content-item-top-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.reviews-content-item-top-avatar img {
+    width: 64px;
+    transform: translate(0, -5%)
+}
+
+.reviews-content-item-top-subtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviews-content-item-top-subtext-stars {
+    display: flex;
+    gap: 6px;
+}
+.reviews-content-item-top-subtext-text {
+    color: #6b6b6b;
+    text-align: center;
+}
+
+.reviews-content-item-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-content-item-bottom-content {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
 }
