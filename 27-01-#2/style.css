@@ -52,10 +52,29 @@ body {
   align-items: center;
 }
 
+.menu-site-links-list {
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu-site-links-list > li > a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-site-links-list > li > a:hover {
+  text-decoration: none;
+  color: #979797;
+}
+
 .menu-site-links-item {
   font-size: 16px;
   font-weight: 500;
-  padding: 0 20px 0 20px;
+  color: white;
+  padding: 20px;
 }
 
 .menu-site-links-signin-button {
@@ -67,6 +86,14 @@ body {
   width: 152px;
   height: 60px;
   border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-site-links-signin-button:hover {
+  background-color: #6a3aaa;
 }
 
 /* Welcome Page */
@@ -108,6 +135,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.welcome-page-left-start-button:hover {
+  background-color: #6a3aaa;
 }
 
 .welcome-page-left-start-button-icon {
@@ -144,6 +179,14 @@ body {
 .welcome-page-right {
   display: flex;
   flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.welcome-page-right:hover {
+  scale: 1.1;
 }
 
 .welcome-page-right-text {
@@ -231,6 +274,15 @@ body {
   align-items: center;
   background-color: #a259ff;
   border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  border: none;
+}
+
+.trending-content-item-imgs-more:hover {
+  background-color: transparent;
+  border: 2px solid #a259ff;
 }
 
 .trending-content-item-imgs-more-text {
@@ -251,6 +303,7 @@ body {
 }
 
 .trending-content-item-text-user {
+  max-width: max-content;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -259,6 +312,14 @@ body {
 .trending-content-item-text-user-username {
   font-weight: 200;
   font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.trending-content-item-text-user-username:hover {
+  text-decoration: underline;
 }
 
 /* Top Sales Section */
@@ -273,7 +334,7 @@ body {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: 98px;
 }
 
 .top-sales-header-title {
@@ -302,6 +363,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  background-color: transparent;
+}
+
+.top-sales-header-button:hover {
+  background-color: #a259ff20;
 }
 
 .top-sales-header-button-text {
@@ -322,6 +391,14 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.top-sales-grid-item:hover {
+  scale: 1.1;
 }
 
 .top-sales-grid-item-top {
