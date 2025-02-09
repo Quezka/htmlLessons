@@ -15,21 +15,9 @@ body {
   font-style: normal;
   gap: 172px;
   overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #2b2b2b;
-  color: #ffff;
-  font-family: "Work Sans", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  gap: 172px;
-  overflow-y: scroll;
 }
 
 .content {
-  min-width: 1050px;
-  width: 1050px;
   min-width: 1050px;
   width: 1050px;
 }
@@ -41,18 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.menu {
-  width: 95vw;
-  padding: 20px 0 20px 0;
-  display: flex;
-  justify-content: space-between;
-}
 
-.menu-site-title {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
 .menu-site-title {
   display: flex;
   gap: 10px;
@@ -63,15 +40,7 @@ body {
   width: 32px;
   height: 32px;
 }
-.menu-site-title-icon {
-  width: 32px;
-  height: 32px;
-}
 
-.menu-site-title-name {
-  width: 199px;
-  height: 20px;
-}
 .menu-site-title-name {
   width: 199px;
   height: 20px;
@@ -133,17 +102,7 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
-.welcome-page {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
 
-.welcome-page-left {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
 .welcome-page-left {
   display: flex;
   flex-direction: column;
@@ -155,27 +114,13 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.welcome-page-left-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 .welcome-page-left-h1 {
   font-size: 67px;
   font-weight: 550;
   line-height: 110%;
 }
-.welcome-page-left-h1 {
-  font-size: 67px;
-  font-weight: 550;
-  line-height: 110%;
-}
 
-.welcome-page-left-span {
-  font-size: 22px;
-  font-weight: 300;
-}
 .welcome-page-left-span {
   font-size: 22px;
   font-weight: 300;
@@ -204,15 +149,7 @@ body {
   width: 20px;
   height: 20px;
 }
-.welcome-page-left-start-button-icon {
-  width: 20px;
-  height: 20px;
-}
 
-.welcome-page-left-start-button-span {
-  font-size: 16px;
-  font-weight: 550;
-}
 .welcome-page-left-start-button-span {
   font-size: 16px;
   font-weight: 550;
@@ -222,15 +159,7 @@ body {
   display: flex;
   gap: 30px;
 }
-.welcome-page-left-stats {
-  display: flex;
-  gap: 30px;
-}
 
-.welcome-page-left-stats-item {
-  display: flex;
-  flex-direction: column;
-}
 .welcome-page-left-stats-item {
   display: flex;
   flex-direction: column;
@@ -241,16 +170,7 @@ body {
   font-size: 28px;
   font-weight: 550;
 }
-.welcome-page-left-stats-item-h1 {
-  font-family: "Space Mono", serif;
-  font-size: 28px;
-  font-weight: 550;
-}
 
-.welcome-page-left-stats-item-span {
-  font-size: 20px;
-  font-weight: 250;
-}
 .welcome-page-left-stats-item-span {
   font-size: 20px;
   font-weight: 250;
@@ -277,19 +197,7 @@ body {
   background-color: #3b3b3b;
   border-radius: 0 0 20px 20px;
 }
-.welcome-page-right-text {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #3b3b3b;
-  border-radius: 0 0 20px 20px;
-}
 
-.welcome-page-right-text-h1 {
-  font-size: 22px;
-  font-weight: 550;
-}
 .welcome-page-right-text-h1 {
   font-size: 22px;
   font-weight: 550;
@@ -300,25 +208,12 @@ body {
   align-items: center;
   gap: 12px;
 }
-.welcome-page-right-text-user {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
 
 .welcome-page-right-text-user-avatar {
   width: 24px;
   height: 24px;
 }
-.welcome-page-right-text-user-avatar {
-  width: 24px;
-  height: 24px;
-}
 
-.welcome-page-right-text-user-name {
-  font-size: 16px;
-  font-weight: 250;
-}
 .welcome-page-right-text-user-name {
   font-size: 16px;
   font-weight: 250;
@@ -331,18 +226,7 @@ body {
   justify-content: space-between;
   gap: 43px;
 }
-.trending {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 43px;
-}
 
-.trending-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 .trending-title {
   display: flex;
   flex-direction: column;
@@ -353,15 +237,7 @@ body {
   font-weight: 500;
   font-size: 38px;
 }
-.trending-title-h1 {
-  font-weight: 500;
-  font-size: 38px;
-}
 
-.trending-title-span {
-  font-weight: 200;
-  font-size: 22px;
-}
 .trending-title-span {
   font-weight: 200;
   font-size: 22px;
@@ -371,19 +247,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.trending-content {
-  display: flex;
-  justify-content: space-between;
-}
 
-.trending-content-item {
-  width: 330px;
-  height: 525px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-}
 .trending-content-item {
   width: 330px;
   height: 525px;
@@ -398,16 +262,7 @@ body {
   grid-template: 1fr 100px / 100px 100px 100px;
   gap: 15px;
 }
-.trending-content-item-imgs {
-  display: grid;
-  grid-template: 1fr 100px / 100px 100px 100px;
-  gap: 15px;
-}
 
-.trending-img-big {
-  grid-area: 1 / 1 / 1 / 4;
-  order: 1;
-}
 .trending-img-big {
   grid-area: 1 / 1 / 1 / 4;
   order: 1;
@@ -435,27 +290,13 @@ body {
   font-weight: bold;
   font-size: 22px;
 }
-.trending-content-item-imgs-more-text {
-  font-family: "Space Mono", serif;
-  font-weight: bold;
-  font-size: 22px;
-}
 
 .trending-content-item-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.trending-content-item-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.trending-content-item-text-name {
-  font-size: 22px;
-  font-weight: 500;
-}
 .trending-content-item-text-name {
   font-size: 22px;
   font-weight: 500;
@@ -488,32 +329,14 @@ body {
   align-items: center;
   gap: 40px;
 }
-/* Top Sales Section */
-.top-sales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
 
 .top-sales-header {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  gap: 100px;
-}
-.top-sales-header {
-  width: inherit;
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
+  gap: 98px;
 }
 
-.top-sales-header-title {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 .top-sales-header-title {
   display: flex;
   flex-direction: column;
@@ -524,15 +347,7 @@ body {
   font-size: 38px;
   font-weight: 500;
 }
-.top-sales-header-h1 {
-  font-size: 38px;
-  font-weight: 500;
-}
 
-.top-sales-header-span {
-  font-size: 22px;
-  font-weight: 200;
-}
 .top-sales-header-span {
   font-size: 22px;
   font-weight: 200;
@@ -562,16 +377,7 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.top-sales-header-button-text {
-  font-size: 16px;
-  font-weight: 500;
-}
 
-.top-sales-grid {
-  display: grid;
-  grid-template: repeat(3, 240px) / repeat(4, 238px);
-  gap: 30px;
-}
 .top-sales-grid {
   display: grid;
   grid-template: repeat(3, 240px) / repeat(4, 238px);
@@ -611,27 +417,7 @@ body {
   background-color: #2b2b2b;
   color: #858584;
 }
-.top-sales-grid-item-top {
-  width: inherit;
-  display: flex;
-  justify-content: space-between;
-}
-.top-sales-grid-item-number {
-  align-self: flex-start;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #2b2b2b;
-  color: #858584;
-}
 
-.top-sales-grid-item-avatar {
-  width: 120px;
-  height: 120px;
-}
 .top-sales-grid-item-avatar {
   width: 120px;
   height: 120px;
@@ -643,17 +429,7 @@ body {
   align-items: center;
   gap: 5px;
 }
-.top-sales-grid-item-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
 
-.top-sales-grid-item-h1 {
-  font-size: 22px;
-  font-weight: 550;
-}
 .top-sales-grid-item-h1 {
   font-size: 22px;
   font-weight: 550;
@@ -663,18 +439,6 @@ body {
   color: #858584;
   font-size: 16px;
   font-weight: 350;
-}
-.top-sales-grid-item-span {
-  color: #858584;
-  font-size: 16px;
-  font-weight: 350;
-}
-
-.top-sales-grid-item-span-var {
-  color: #ffff;
-  font-family: "Space Mono", serif;
-  font-size: 16px;
-  font-weight: 200;
 }
 
 .top-sales-grid-item-span-var {
