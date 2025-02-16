@@ -1,0 +1,58 @@
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #232536;
+}
+
+.header-content {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-ul-li > a {
+  font-size: 16px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-ul-li > a:hover {
+  color: #bbbbbb;
+}
+
+.nav-ul-li > a:active {
+  color: #e6d00e;
+}
+
+.nav-button-subscribe {
+  width: 179px;
+  height: 56px;
+  border: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-button-subscribe:hover {
+  background-color: #bbbbbb;
+}
+
+.nav-button-subscribe:active {
+  background-color: #e6d00e;
+}
