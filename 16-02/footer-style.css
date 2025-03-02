@@ -42,6 +42,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 64px;
 }
 
 .footer-mid-h2 {
@@ -50,6 +51,47 @@ footer {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -2px;
+}
+
+.footer-mid-content-form {
+  width: 526px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-mid-content-form-input {
+  width: 273px;
+  height: 56px;
+  border: 1px solid #4c4c4c;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0 25px;
+  outline: none;
+  color: white;
+}
+
+.footer-mid-content-form-input::placeholder {
+  color: #6d6e76;
+}
+
+.footer-mid-content-form-submit {
+  background-color: #ffd050;
+  color: #232536;
+  border: none;
+  height: 56px;
+  padding: 16px 48px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer-mid-content-form-submit:hover,
+.footer-mid-content-form-submit:active {
+  background-color: #b19035;
 }
 
 .footer-bottom {
@@ -70,4 +112,14 @@ footer {
   gap: 27px;
   font-size: 16px;
   color: #6d6e76;
+}
+
+.footer-bottom-icons > a {
+  color: #6d6e76;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer-bottom-icons > a:hover,
+.footer-bottom-icons > a:active {
+  color: white;
 }

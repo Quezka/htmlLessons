@@ -25,6 +25,6 @@ ul {
   align-items: center;
 }
 .content {
-  min-width: 1280px;
+  width: 1280px;
   /*padding: 0 320px;*/
 }
