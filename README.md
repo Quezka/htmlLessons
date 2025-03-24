@@ -132,7 +132,3 @@ console.log(!!x) >> False;
 `isNaN(var)` --> `True` || `False`
 
 **НАЧАТЬ С МАССИВОВ**
-
-```
-
-```
