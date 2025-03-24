@@ -1,5 +1,6 @@
 h1,
-div {
+div,
+* {
   margin: 0;
   padding: 0;
 }
@@ -41,6 +42,7 @@ body {
   padding: 20px 0 20px 0;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .menu-site-title {
@@ -384,6 +386,12 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  #trending-content-item-2nd {
+    display: none;
+  }
+}
+
 .trending-content {
   display: flex;
   justify-content: space-between;
@@ -482,7 +490,6 @@ body {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  gap: 98px;
 }
 
 .top-sales-header-title {
@@ -501,6 +508,19 @@ body {
   font-weight: 200;
 }
 
+@media screen and (max-width: 1024px) {
+  .top-sales-header-h1 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .top-sales-header-span {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 343px;
+  }
+}
+
 .top-sales-header-button {
   align-self: flex-end;
   display: flex;
@@ -515,6 +535,21 @@ body {
   transition: all 0.2s ease-in-out;
   color: white;
   background-color: transparent;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .desktop-hidden {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
 }
 
 .top-sales-header-button:hover {
@@ -532,6 +567,18 @@ body {
   gap: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .top-sales-grid {
+    grid-template: repeat(3, 100px) / repeat(2, 330px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-sales-grid {
+    grid-template: repeat(6, 100px) / 330px;
+  }
+}
+
 .top-sales-grid-item {
   background-color: #3b3b3b;
   border-radius: 20px;
@@ -545,6 +592,18 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  .hideable {
+    display: none;
+  }
+
+  .top-sales-grid-item {
+    flex-direction: row;
+    position: relative;
+    gap: 20px;
+  }
+}
+
 .top-sales-grid-item:hover {
   scale: 1.1;
 }
@@ -554,6 +613,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .top-sales-grid-item-number {
   align-self: flex-start;
   display: flex;
@@ -566,9 +626,24 @@ body {
   color: #858584;
 }
 
+@media screen and (max-width: 1024px) {
+  .top-sales-grid-item-number {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+}
+
 .top-sales-grid-item-avatar {
   width: 120px;
   height: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .top-sales-grid-item-avatar {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .top-sales-grid-item-text {
@@ -578,6 +653,11 @@ body {
   gap: 5px;
 }
 
+@media screen and (max-width: 1024px) {
+  .top-sales-grid-item-text {
+    align-items: flex-start;
+  }
+}
 .top-sales-grid-item-h1 {
   font-size: 22px;
   font-weight: 550;
@@ -587,6 +667,14 @@ body {
   color: #858584;
   font-size: 16px;
   font-weight: 350;
+}
+
+@media screen and (max-width: 1024px) {
+  .top-sales-grid-item-span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .top-sales-grid-item-span-var {
