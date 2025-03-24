@@ -95,12 +95,15 @@ grid-template: grid-template-rows / grid-template-columns -- сокращени�
 ### Что даёт True, а что False?
 
 `!!` -> привод к логическому значению
-`let x = 5`
-`console.log(!!x)`
-`>> True`
-`x = 0`
-`console.log(!!x)`
-`>> False`
+
+````javascript
+```let x = 5
+console.log(!!x)
+>> True
+x = 0
+console.log(!!x)
+>> False
+````
 
 Всё, отличное от нуля == `False`
 Полностью пустая строка == `False`
@@ -131,3 +134,7 @@ grid-template: grid-template-rows / grid-template-columns -- сокращени�
 `isNaN(var)` --> `True` || `False`
 
 **НАЧАТЬ С МАССИВОВ**
+
+```
+
+```
