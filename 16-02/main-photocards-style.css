@@ -1,56 +1,56 @@
 .main-photocards {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 129px;
-    margin: 129px 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 129px;
+  margin: 129px 0;
 }
 
 .main-photocards-item {
-    display: flex;
-    align-items: center;
-    gap: 135px;
+  display: flex;
+  align-items: center;
+  gap: 135px;
 }
 
 .main-photocards-item-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .main-photocards-item-title {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 48px;
-    letter-spacing: -2px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: -2px;
 }
 
 .main-photocards-item-subtitle {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
 }
 
 .main-photocards-item-text {
-    font-size: 16px;
-    line-height: 28px;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .main-photocards-item-photo {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .main-photocards-item-img-shape {
-    position: absolute;
+  position: absolute;
 }
 
 .shape-hands {
-    top: 114px;
-    left: -57px;
+  top: 114px;
+  left: -57px;
 }
 
-.shape-people { 
-    bottom: -37px;
-    left: 106px;
+.shape-people {
+  bottom: -37px;
+  left: 106px;
 }

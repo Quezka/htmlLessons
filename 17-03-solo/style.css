@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.circles {
+  /*padding: 65px 81px;*/
+  margin: 65px 81px;
+  max-width: 100%;
+  height: calc(100vh - 162px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 239px;
+  height: 239px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #bc1f1f;
+}
+
+.yellow {
+  background-color: #fde400;
+}
+
+.green {
+  background-color: #26ca22;
+}
+
+.blue {
+  background-color: #0c56e7;
+}
+
+.login-window {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 638px;
+  height: 673px;
+  background-color: #562ea9;
+  top: 50%;
+  left: 50%;
+  border-radius: 47px;
+  padding: 20px;
+}
+
+.login-window-title {
+  font-family: "JetBrains Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.login-window-title-h1 {
+  line-height: 118px;
+  font-size: 128px;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.login-window-title-span {
+  line-height: 16px;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 21;
+}

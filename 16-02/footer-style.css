@@ -1,5 +1,125 @@
 footer {
+  position: relative;
   height: 560px;
   width: 100%;
   background-color: #232536;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top-nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: white;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-mid {
+  height: 256px;
+  width: 100%;
+  background-color: #2e3040;
+  display: flex;
+  align-items: center;
+}
+
+.footer-mid-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 64px;
+}
+
+.footer-mid-h2 {
+  width: 562px;
+  color: white;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+
+.footer-mid-content-form {
+  width: 526px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-mid-content-form-input {
+  width: 273px;
+  height: 56px;
+  border: 1px solid #4c4c4c;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0 25px;
+  outline: none;
+  color: white;
+}
+
+.footer-mid-content-form-input::placeholder {
+  color: #6d6e76;
+}
+
+.footer-mid-content-form-submit {
+  background-color: #ffd050;
+  color: #232536;
+  border: none;
+  height: 56px;
+  padding: 16px 48px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer-mid-content-form-submit:hover,
+.footer-mid-content-form-submit:active {
+  background-color: #b19035;
+}
+
+.footer-bottom {
+  color: #bdbdc2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom-p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-bottom-icons {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  font-size: 16px;
+  color: #6d6e76;
+}
+
+.footer-bottom-icons > a {
+  color: #6d6e76;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer-bottom-icons > a:hover,
+.footer-bottom-icons > a:active {
+  color: white;
 }

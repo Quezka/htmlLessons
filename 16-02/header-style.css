@@ -1,7 +1,11 @@
 header {
+  position: relative;
   height: 80px;
   width: 100%;
   background-color: #232536;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-content {
