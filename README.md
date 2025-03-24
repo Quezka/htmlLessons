@@ -96,14 +96,12 @@ grid-template: grid-template-rows / grid-template-columns -- сокращени�
 
 `!!` -> привод к логическому значению
 
-````javascript
-```let x = 5
-console.log(!!x)
->> True
-x = 0
-console.log(!!x)
->> False
-````
+```javascript
+let x = 5;
+console.log(!!x) >> True;
+x = 0;
+console.log(!!x) >> False;
+```
 
 Всё, отличное от нуля == `False`
 Полностью пустая строка == `False`
