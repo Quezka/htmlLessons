@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Roboto";
+	background-color: #0c3a80;
+	color: white;
+}
+
+.main-h1 {
+	margin: 20px;
+	text-align: center;
+}
+
+.transactions {
+	margin: 50px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	gap: 20px;
+}
+
+.trans-item {
+	padding: 10px;
+	background-color: #9e350b;
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	gap: 5px;
+	border-radius: 10px;
+}
