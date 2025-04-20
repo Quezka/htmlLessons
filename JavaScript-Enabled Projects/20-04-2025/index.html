@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="icon/x-icon" href="../../rep-imgs/favicon.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+
+  <title>TODO List - 20-04-2025 Урок</title>
+</head>
+
+<body>
+  <h1 class="title">
+    Мои Задачи
+  </h1>
+  <nav class="date-selection">
+    <ul class="date-selection-ul">
+      <li class="date-selection-li">
+        <button class="today" id="today">
+          Сегодня
+        </button>
+      </li>
+      <li class="date-selection-li">
+        <button class="tomorrow" id="tomorrow">
+          Завтра
+        </button>
+      </li>
+      <li class="date-selection-li">
+        <button class="week" id="week">
+          Неделя
+        </button>
+      </li>
+      <li class="date-selection-li">
+        <button class="month" id="month">
+          Месяц
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="tasks" id="tasks">
+    <details class="tasks-item">
+      <summary class="tasks-item-summary">
+        <span class="tasks-item-title">
+          <i class="fa fa-caret-right" aria-hidden="true"></i>
+          Задача
+        </span>
+        <span class="tasks-item-buttons">
+          <button class="tasks-item-buttons-edit">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          </button>
+          <button class="tasks-item-buttons-delete">
+            <i class="fa fa-window-close-o" aria-hidden="true"></i>
+          </button>
+          <input type="checkbox" class="tasks-item-buttons-done">
+        </span>
+      </summary>
+      <div class="tasks-item-dates">
+        <span class="tasks-item-dates-creation">
+          Дата создания
+        </span>
+        <span class="tasks-item-dates-deadline">
+          Дедлайн
+        </span>
+        <span class="tasks-item-dates-completion">
+          Дата выполнения
+        </span>
+      </div>
+      <ul class="tasks-item-comments">
+        <li class="tasks-item-comments-comment">
+          Комментарий 1
+        </li>
+        <li class="tasks-item-comments-comment">
+          Комментарий 2
+        </li>
+      </ul>
+      <span class="tasks-item-update-date">
+        Дата обновления
+      </span>
+    </details>
+  </div>
+  <button class="create-new-task" id="create-new-task">
+    Добавить новую Задачу
+  </button>
+</body>
+
+</html>
