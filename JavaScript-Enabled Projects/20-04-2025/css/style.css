@@ -1,146 +1,147 @@
 * {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: white;
-  transition: all 0.2s ease-in-out;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: white;
+	transition: all 0.2s ease-in-out;
 }
 
 body {
-  text-align: left;
+	text-align: left;
 }
 
 .title {
-  margin: 20px 0 0 20px;
-  font-size: 48px;
+	margin: 20px 0 0 20px;
+	font-size: 48px;
 }
 
 .date-selection {
-  margin: 20px;
-  display: flex;
+	margin: 20px;
+	display: flex;
 }
 
 .date-selection-ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+	display: flex;
+	list-style: none;
+	gap: 20px;
 }
 
 .date-selection-li > button {
-  cursor: pointer;
-  padding: 20px 40px;
-  background-color: #dadada;
-  border: 1px solid black;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
+	cursor: pointer;
+	padding: 20px 40px;
+	background-color: #dadada;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .date-selection-li > button:hover,
 .date-selection-li > button:active {
-  background-color: #969696;
+	background-color: #969696;
 }
 
 .tasks {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	gap: 20px;
 }
 
 .tasks-item {
-  padding: 10px 20px;
-  width: 800px;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: left;
+	padding: 10px 20px;
+	width: 800px;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: left;
 }
 
 .tasks-item-summary {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 details[open] {
-  .fa-caret-right {
-    rotate: 90deg;
-  }
-  summary {
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-  }
+	.fa-caret-right {
+		rotate: 90deg;
+	}
+	summary {
+		border-bottom: 1px solid black;
+		margin-bottom: 10px;
+	}
 }
 
 .tasks-item-title {
-  display: flex;
-  gap: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
+	display: flex;
+	gap: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 .tasks-item-buttons {
-  display: flex;
-  gap: 5px;
-  align-items: center;
+	display: flex;
+	gap: 5px;
+	align-items: center;
 }
 
 .tasks-item-buttons > button {
-  font-size: 24px;
-  cursor: pointer;
+	font-size: 24px;
+	cursor: pointer;
 }
 
 .tasks-item-buttons > button:active {
-  color: #969696;
+	color: #969696;
 }
 
 .tasks-item-buttons > button:hover {
-  color: #969696;
+	color: #969696;
 }
 
 .tasks-item-buttons-done {
-  width: 24px;
-  height: 24px;
-  margin: 4px;
-  cursor: pointer;
+	width: 24px;
+	height: 24px;
+	margin: 4px;
+	cursor: pointer;
 }
 
 .tasks-item-dates {
-  display: flex;
-  gap: 25px;
-  font-size: 20px;
-  margin-bottom: 20px;
+	display: flex;
+	gap: 25px;
+	font-size: 20px;
+	margin-bottom: 20px;
 }
 
 .tasks-item-comments {
-  text-align: left;
-  padding-left: 20px;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 20px;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-bottom: 20px;
 }
 
-.tasks-item-update-date {
-  font-size: 20px;
-  margin-bottom: 20px;
+.tasks-item-dates-update-date {
+	font-size: 20px;
+	margin-bottom: 20px;
 }
 
 .create-new-task {
-  margin: 20px;
-  cursor: pointer;
-  padding: 20px 40px;
-  background-color: #dadada;
-  border: 1px solid black;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
+	margin: 20px;
+	cursor: pointer;
+	padding: 20px 40px;
+	background-color: #dadada;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .create-new-task:hover {
-  background-color: #969696;
+	background-color: #969696;
 }
 
 .create-new-task:active {
-  background-color: #969696;
+	background-color: #969696;
 }
