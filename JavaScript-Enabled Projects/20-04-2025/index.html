@@ -85,6 +85,20 @@
   <button class="create-new-task" id="create-new-task">
     Добавить новую Задачу
   </button>
+  <!-- Закончить Модальные Окна, все что можно объединить для них всех,
+    сделать список комментариев, сделать кнопку удаления комментариев,
+     сделать еще одну форму с инпутом и кнопкой для комментариев -->
+  <dialog class="create-task" id="create-task">
+    <form class="create-task-form" method="dialog">
+      <button type="submit" id="create-task-close-modal">
+        <i class="fa fa-window-close-o" aria-hidden="true"></i>
+      </button>
+      <label for="create-task-title" id="create-task-title-name">
+        Название
+      </label>
+      <input type="text" id="create-task-title-input">
+    </form>
+  </dialog>
 </body>
 
 <script src="./js/script.js"></script>

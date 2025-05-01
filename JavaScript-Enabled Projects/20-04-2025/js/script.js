@@ -1,9 +1,27 @@
 const doc = document;
 const cont = doc.getElementById("tasks");
+const editModal = doc.getElementById("create-task");
+const taskEditTitle = doc.getElementById("create-task-title-input");
 
 const enumerateDates = (i) => {
 	const list = ["Создана: ", "До: ", "Выполнена: ", "Обновлена: "];
 	return list[i];
+};
+
+const taskEdit = async (event) => {
+	const task = await getTask(event.currentTarget.id);
+	taskEditTitle.value = task.title;
+	editModal.showModal();
+};
+
+const getTask = async (id) => {
+	try {
+		const resp = await fetch("http://localhost:3000/tasks/" + id);
+		const data = await resp.json();
+		return data;
+	} catch (error) {
+		console.error(error);
+	}
 };
 
 const getData = () => {
@@ -40,6 +58,8 @@ const getData = () => {
 				const buttonEdit = doc.createElement("button");
 				buttonEdit.className = "tasks-item-buttons-edit";
 				buttonSpan.appendChild(buttonEdit);
+				buttonEdit.id = task.id;
+				buttonEdit.addEventListener("click", taskEdit);
 
 				const editIcon = doc.createElement("i");
 				editIcon.className = "fa fa-pencil-square-o";

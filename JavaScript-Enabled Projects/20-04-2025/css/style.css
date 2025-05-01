@@ -6,6 +6,10 @@
 	transition: all 0.2s ease-in-out;
 }
 
+.fa {
+	background-color: transparent;
+}
+
 body {
 	text-align: left;
 }
@@ -144,4 +148,66 @@ details[open] {
 
 .create-new-task:active {
 	background-color: #969696;
+}
+
+.create-task {
+	position: fixed;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 350px;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+}
+
+.create-task::backdrop {
+	background-color: rgba(167, 167, 167, 0.493);
+}
+
+.create-task-form {
+	background-color: transparent;
+	width: 350px;
+}
+
+#create-task-close-modal {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: white;
+	font-size: 25px;
+	right: 20px;
+	top: 20px;
+	transition: all 0.2s ease-in-out;
+}
+
+#create-task-close-modal:active,
+#create-task-close-modal:hover {
+	color: rgb(151, 151, 151);
+}
+
+#create-task-title-name {
+	background-color: transparent;
+	color: white;
+	margin-top: 30px;
+	display: block;
+	font-size: 20px;
+}
+
+#create-task-title-input {
+	margin-top: 2px;
+	padding: 6px 5px;
+	border: 1px solid rgb(58, 58, 58);
+	border-radius: 5px;
+	width: calc(350px - 10px);
+	max-width: 350px;
+	background-color: #4d4d4d67;
+	color: white;
+	letter-spacing: 1px;
 }
