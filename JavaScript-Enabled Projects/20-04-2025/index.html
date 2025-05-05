@@ -90,13 +90,19 @@
      сделать еще одну форму с инпутом и кнопкой для комментариев -->
   <dialog class="create-task" id="create-task">
     <form class="create-task-form" method="dialog">
-      <button type="submit" id="create-task-close-modal">
+      <button type="button" id="create-task-close-modal">
         <i class="fa fa-window-close-o" aria-hidden="true"></i>
       </button>
       <label for="create-task-title-input" id="create-task-title-name">
         Название
       </label>
       <input type="text" id="create-task-title-input">
+      <span class="error-message hidden" id="error-message">
+        Это поле не должно быть пустым!
+      </span>
+      <button type="button" class="create-task-title-confirm" id="create-task-title-confirm">
+        <i class="fa fa-check-square" aria-hidden="true"></i>
+      </button>
       <ul class="create-task-comments" id="create-task-comments">
         <li class="create-task-comments-comment" id="create-task-comments-comment-1">
           Комментарий 1
@@ -123,7 +129,7 @@
         Добавить Комментарий
       </label>
       <input type="text" class="create-task-form-comments-comment" id="create-task-form-comments-comment">
-      <button type="button" class="create-task-form-comments-complete">
+      <button type="button" class="create-task-form-comments-complete" id="create-task-form-comments-complete">
         <i class="fa fa-check-square" aria-hidden="true"></i>
       </button>
     </form>

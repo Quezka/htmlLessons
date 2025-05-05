@@ -2,6 +2,9 @@ const doc = document;
 const cont = doc.getElementById("tasks");
 const editModal = doc.getElementById("create-task");
 const taskEditTitle = doc.getElementById("create-task-title-input");
+const confirmTitleEdit = doc.getElementById("create-task-title-confirm");
+const closeEditModal = doc.getElementById("create-task-close-modal");
+let currentTaskId = 0;
 
 const enumerateDates = (i) => {
 	const list = ["Создана: ", "До: ", "Выполнена: ", "Обновлена: "];
@@ -9,7 +12,8 @@ const enumerateDates = (i) => {
 };
 
 const taskEdit = async (event) => {
-	const task = await getTask(event.currentTarget.id);
+	currentTaskId = event.currentTarget.id;
+	const task = await getTask(currentTaskId);
 	taskEditTitle.value = task.title;
 	editModal.showModal();
 };
@@ -23,6 +27,39 @@ const getTask = async (id) => {
 		console.error(error);
 	}
 };
+
+const deleteTask = (event) => {
+	fetch(`http://localhost:3000/tasks/${event.currentTarget.id}`, {
+		method: "DELETE",
+	}).then((response) => {
+		console.log(response);
+	});
+};
+
+const closeModal = () => {
+	console.log("closemodal");
+	editModal.close();
+};
+closeEditModal.addEventListener("click", closeModal);
+
+const updateTitle = () => {
+	if (taskEditTitle.value.trim() != "") {
+		fetch(`http://localhost:3000/tasks/${currentTaskId}`, {
+			method: "PATCH",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				title: taskEditTitle.value.trim(),
+			}),
+		})
+			.then((response) => response.json())
+			.then((data) => {});
+	} else {
+		doc.getElementById("error-message").className = "error-message shown";
+	}
+};
+confirmTitleEdit.addEventListener("click", updateTitle);
 
 const getData = () => {
 	fetch("http://localhost:3000/tasks")
@@ -68,7 +105,9 @@ const getData = () => {
 
 				const buttonDelete = doc.createElement("button");
 				buttonDelete.className = "tasks-item-buttons-delete";
+				buttonDelete.id = task.id;
 				buttonSpan.appendChild(buttonDelete);
+				buttonDelete.addEventListener("click", deleteTask);
 
 				const deleteIcon = doc.createElement("i");
 				deleteIcon.className = "fa fa-window-close-o";
@@ -124,5 +163,18 @@ const getData = () => {
 			});
 		});
 };
+
+const getComments = () => {
+	fetch("http://localhost:3000/tasks/1")
+		.then((response) => response.json())
+		.then((data) => {
+			console.log(data.comments);
+		})
+		.catch((error) => {
+			console.error(error);
+		});
+};
+
+getComments();
 
 getData();
