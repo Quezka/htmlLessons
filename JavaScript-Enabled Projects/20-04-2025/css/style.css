@@ -4,6 +4,7 @@
 	border: none;
 	background-color: white;
 	transition: all 0.2s ease-in-out;
+	font-family: "Ubuntu", sans-serif;
 }
 
 .fa {

@@ -4,6 +4,7 @@ const editModal = doc.getElementById("create-task");
 const taskEditTitle = doc.getElementById("create-task-title-input");
 const confirmTitleEdit = doc.getElementById("create-task-title-confirm");
 const closeEditModal = doc.getElementById("create-task-close-modal");
+const url = "http://localhost:3000";
 let currentTaskId = 0;
 
 const enumerateDates = (i) => {
@@ -20,7 +21,7 @@ const taskEdit = async (event) => {
 
 const getTask = async (id) => {
 	try {
-		const resp = await fetch("http://localhost:3000/tasks/" + id);
+		const resp = await fetch(`${url}/tasks/${id}`);
 		const data = await resp.json();
 		return data;
 	} catch (error) {
@@ -29,7 +30,7 @@ const getTask = async (id) => {
 };
 
 const deleteTask = (event) => {
-	fetch(`http://localhost:3000/tasks/${event.currentTarget.id}`, {
+	fetch(`${url}/tasks/${event.currentTarget.id}`, {
 		method: "DELETE",
 	}).then((response) => {
 		console.log(response);
@@ -44,7 +45,7 @@ closeEditModal.addEventListener("click", closeModal);
 
 const updateTitle = () => {
 	if (taskEditTitle.value.trim() != "") {
-		fetch(`http://localhost:3000/tasks/${currentTaskId}`, {
+		fetch(`${url}/tasks/${currentTaskId}`, {
 			method: "PATCH",
 			headers: {
 				"Content-Type": "application/json",
@@ -62,7 +63,7 @@ const updateTitle = () => {
 confirmTitleEdit.addEventListener("click", updateTitle);
 
 const getData = () => {
-	fetch("http://localhost:3000/tasks")
+	fetch(`${url}/tasks`)
 		.then((response) => response.json())
 		.then((data) => {
 			data.forEach((task) => {
@@ -165,7 +166,7 @@ const getData = () => {
 };
 
 const getComments = () => {
-	fetch("http://localhost:3000/tasks/1")
+	fetch(`${url}/tasks/1`)
 		.then((response) => response.json())
 		.then((data) => {
 			console.log(data.comments);

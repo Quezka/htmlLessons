@@ -1,235 +1,279 @@
 {
-	"tasks": [
-		{
-			"id": "1",
-			"title": "Hello, world!",
-			"comments": ["Установить зависимости", "Проверить работу виртуального окружения", "Проверить работу виртуального окружения"],
-			"dates": {
-				"created_at": "17-04-2025",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "2",
-			"title": "Создать репозиторий на GitHub",
-			"comments": [],
-			"dates": {
-				"created_at": null,
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "3",
-			"title": "Определить структуру проекта",
-			"comments": ["Обсудить с командой", "Создать директории: src, tests, docs"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": "2025-04-22",
-				"update_date": "2025-04-22"
-			}
-		},
-		{
-			"id": "4",
-			"title": "Написать README файл",
-			"comments": ["Добавить описание проекта", "Включить инструкции по запуску"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "5",
-			"title": "Реализовать функцию авторизации",
-			"comments": ["Учесть валидацию", "Добавить обработку ошибок"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "6",
-			"title": "Разработать главную страницу",
-			"comments": ["Сверстать по макету", "Проверить адаптивность"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "7",
-			"title": "Добавить логирование ошибок",
-			"comments": [],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "8",
-			"title": "Настроить CI/CD",
-			"comments": ["Интеграция с GitHub Actions", "Добавить линтер и тесты"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "9",
-			"title": "Реализовать форму обратной связи",
-			"comments": ["Сделать проверку email", "Отправка данных на сервер"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "10",
-			"title": "Добавить документацию к API",
-			"comments": ["Использовать Swagger", "Обновлять при изменениях"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "11",
-			"title": "Написать юнит-тесты для модуля utils",
-			"comments": ["Покрытие не менее 80%"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "12",
-			"title": "Добавить поддержку нескольких языков",
-			"comments": ["Начать с английского и русского"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "13",
-			"title": "Оптимизировать загрузку изображений",
-			"comments": [],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "14",
-			"title": "Реализовать поиск по сайту",
-			"comments": ["Использовать debounce", "Добавить подсветку результатов"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "15",
-			"title": "Настроить систему уведомлений",
-			"comments": ["Поддержка email и push"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "16",
-			"title": "Провести аудит безопасности",
-			"comments": [],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "17",
-			"title": "Добавить страницу 'О нас'",
-			"comments": ["Контент предоставит маркетинг"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "18",
-			"title": "Импортировать данные из старой системы",
-			"comments": ["Преобразовать формат CSV", "Проверить корректность данных"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "19",
-			"title": "Настроить резервное копирование",
-			"comments": ["Запланировать ежедневные бэкапы"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "20",
-			"title": "Подготовить презентацию проекта",
-			"comments": ["Добавить графики", "Сделать демо"],
-			"dates": {
-				"created_at": "2025-04-17",
-				"due_date": "2025-04-22",
-				"completed_at": null,
-				"update_date": null
-			}
-		},
-		{
-			"id": "21",
-			"title": "qqqqqqqq",
-			"comments": [],
-			"dates": {
-				"created_at": "24 апреля 2025",
-				"due_date": "24 апреля 2025",
-				"completed_at": null,
-				"update_date": null
-			}
-		}
-	]
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Hello, wo",
+      "comments": [
+        "Установить зависимости",
+        "Проверить работу виртуального окружения",
+        "Проверить работу виртуального окружения"
+      ],
+      "dates": {
+        "created_at": "17-04-2025",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "2",
+      "title": "Создать репозиторий на GitHub",
+      "comments": [],
+      "dates": {
+        "created_at": null,
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "3",
+      "title": "Определить структуру проекта",
+      "comments": [
+        "Обсудить с командой",
+        "Создать директории: src, tests, docs"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": "2025-04-22",
+        "update_date": "2025-04-22"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Написать README файл",
+      "comments": [
+        "Добавить описание проекта",
+        "Включить инструкции по запуску"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "5",
+      "title": "Реализовать функцию авторизации",
+      "comments": [
+        "Учесть валидацию",
+        "Добавить обработку ошибок"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "6",
+      "title": "Разработать главную страницу",
+      "comments": [
+        "Сверстать по макету",
+        "Проверить адаптивность"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "7",
+      "title": "Добавить логирование ошибок",
+      "comments": [],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "8",
+      "title": "Настроить CI/CD",
+      "comments": [
+        "Интеграция с GitHub Actions",
+        "Добавить линтер и тесты"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "9",
+      "title": "Реализовать форму обратной связи",
+      "comments": [
+        "Сделать проверку email",
+        "Отправка данных на сервер"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "10",
+      "title": "Добавить документацию к API",
+      "comments": [
+        "Использовать Swagger",
+        "Обновлять при изменениях"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "11",
+      "title": "Написать юнит-тесты для модуля utils",
+      "comments": [
+        "Покрытие не менее 80%"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "12",
+      "title": "Добавить поддержку нескольких языков",
+      "comments": [
+        "Начать с английского и русского"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "13",
+      "title": "Оптимизировать загрузку изображений",
+      "comments": [],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "14",
+      "title": "Реализовать поиск по сайту",
+      "comments": [
+        "Использовать debounce",
+        "Добавить подсветку результатов"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "15",
+      "title": "Настроить систему уведомлений",
+      "comments": [
+        "Поддержка email и push"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "16",
+      "title": "Провести аудит безопасности",
+      "comments": [],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "17",
+      "title": "Добавить страницу 'О нас",
+      "comments": [
+        "Контент предоставит маркетинг"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "18",
+      "title": "Импортировать данные из старой системы",
+      "comments": [
+        "Преобразовать формат CSV",
+        "Проверить корректность данных"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "19",
+      "title": "Настроить резервное копирование",
+      "comments": [
+        "Запланировать ежедневные бэкапы"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "20",
+      "title": "Подготовить презентацию проекта",
+      "comments": [
+        "Добавить графики",
+        "Сделать демо"
+      ],
+      "dates": {
+        "created_at": "2025-04-17",
+        "due_date": "2025-04-22",
+        "completed_at": null,
+        "update_date": null
+      }
+    },
+    {
+      "id": "21",
+      "title": "qqqqqqqq",
+      "comments": [],
+      "dates": {
+        "created_at": "24 апреля 2025",
+        "due_date": "24 апреля 2025",
+        "completed_at": null,
+        "update_date": null
+      }
+    }
+  ]
 }
