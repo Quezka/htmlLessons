@@ -173,6 +173,7 @@ details[open] {
 .create-task-form {
 	background-color: transparent;
 	width: 350px;
+	height: 55%;
 }
 
 #create-task-close-modal {
@@ -205,9 +206,78 @@ details[open] {
 	padding: 6px 5px;
 	border: 1px solid rgb(58, 58, 58);
 	border-radius: 5px;
-	width: calc(350px - 10px);
+	width: calc(350px - 11px);
 	max-width: 350px;
 	background-color: #4d4d4d67;
 	color: white;
 	letter-spacing: 1px;
+}
+
+#create-task-comments {
+	border: 1px solid rgb(58, 58, 58);
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	background-color: #4d4d4d67;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.create-task-comments-comment,
+.create-task-comments-comment > button {
+	background-color: transparent;
+}
+
+.create-task-comments-comment > button {
+	color: white;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	font-size: 15px;
+}
+
+.create-task-comments-comment > button:active,
+.create-task-comments-comment > button:hover {
+	color: rgb(151, 151, 151);
+}
+
+.create-task-form-comments {
+	margin-top: 15px;
+	height: 10%;
+	background-color: transparent;
+	color: white;
+}
+
+.create-task-form-comments-comment-title {
+	display: block;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+.create-task-form-comments-comment {
+	margin-top: 2px;
+	padding: 6px 5px;
+	border: 1px solid rgb(58, 58, 58);
+	border-radius: 5px;
+	width: calc(350px - 11px);
+	max-width: 350px;
+	background-color: #4d4d4d67;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.create-task-form-comments-complete {
+	background-color: transparent;
+	color: white;
+	margin: 2px 0 0 2px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.create-task-form-comments-complete:active,
+.create-task-form-comments-complete:hover {
+	color: rgb(151, 151, 151);
 }

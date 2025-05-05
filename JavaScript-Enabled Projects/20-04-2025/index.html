@@ -93,10 +93,39 @@
       <button type="submit" id="create-task-close-modal">
         <i class="fa fa-window-close-o" aria-hidden="true"></i>
       </button>
-      <label for="create-task-title" id="create-task-title-name">
+      <label for="create-task-title-input" id="create-task-title-name">
         Название
       </label>
       <input type="text" id="create-task-title-input">
+      <ul class="create-task-comments" id="create-task-comments">
+        <li class="create-task-comments-comment" id="create-task-comments-comment-1">
+          Комментарий 1
+          <button id="create-task-comments-comment-delete-1" type="button">
+            <i class="fa fa-window-close-o" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li class="create-task-comments-comment" id="create-task-comments-comment-2">
+          Комментарий 2
+          <button id="create-task-comments-comment-delete-2" type="button">
+            <i class="fa fa-window-close-o" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li class="create-task-comments-comment" id="create-task-comments-comment-3">
+          Комментарий 3
+          <button id="create-task-comments-comment-delete-3" type="button">
+            <i class="fa fa-window-close-o" aria-hidden="true"></i>
+          </button>
+        </li>
+      </ul>
+    </form>
+    <form class="create-task-form-comments">
+      <label for="create-task-form-comments-comment" class="create-task-form-comments-comment-title">
+        Добавить Комментарий
+      </label>
+      <input type="text" class="create-task-form-comments-comment" id="create-task-form-comments-comment">
+      <button type="button" class="create-task-form-comments-complete">
+        <i class="fa fa-check-square" aria-hidden="true"></i>
+      </button>
     </form>
   </dialog>
 </body>
