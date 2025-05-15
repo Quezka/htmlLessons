@@ -1,0 +1,136 @@
+/********** General ************/
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: white;
+	transition: all 0.2s ease-in-out;
+	font-family: "Ubuntu", sans-serif;
+}
+.fa {
+	background-color: transparent;
+}
+body {
+	text-align: center;
+}
+h1 {
+	margin: 20px 0 0 20px;
+	font-size: 48px;
+}
+
+.shown {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+
+.main-view {
+	margin: 40px 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.error-message {
+	background-color: rgb(95, 95, 95);
+	border: 2px solid rgb(213, 73, 73);
+	border-radius: 5px;
+	padding: 4px;
+	color: red;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.calendar {
+	border: none;
+	border-radius: 15px;
+	width: 700px;
+	height: 650px;
+	margin-top: 80px;
+}
+/*******************************/
+
+/********** Buttons ************/
+button {
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+.main-button {
+	background-color: #dadada;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px 40px;
+	margin-bottom: 20px;
+}
+.main-button:hover,
+.main-button:active {
+	background-color: #969696;
+}
+.icon-button {
+	font-size: 24px;
+}
+.icon-button:hover,
+.icon-button:active {
+	color: #969696;
+}
+/*******************************/
+
+/*********** Modal *************/
+.modal {
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: fit-content;
+	background-color: #00000080;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: left;
+}
+.modal::backdrop {
+	background-color: #a7a7a77e;
+}
+.modal-input-label {
+	display: block;
+	background-color: transparent;
+	font-size: 20px;
+}
+.modal-input {
+	margin-top: 2px;
+	padding: 6px 5px;
+	border: 1px solid #3a3a3a;
+	border-radius: 5px;
+	width: calc(350px - 11px);
+	max-width: 350px;
+	background-color: #4d4d4d67;
+	color: white;
+	letter-spacing: 1px;
+}
+.modal-form {
+	color: white;
+	background-color: transparent;
+	width: 350px;
+	height: fit-content;
+}
+.modal-icon-button {
+	background-color: transparent;
+	color: white;
+	margin: 5px 0 0 2px;
+	font-size: 18px;
+	display: block;
+}
+.modal-icon-button:active,
+.modal-icon-button:hover {
+	color: #969696;
+}
+.close-modal {
+	position: absolute;
+	font-size: 25px;
+	top: 20px;
+	right: 20px;
+}
+/*******************************/

@@ -1,0 +1,108 @@
+.date-selection-ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.tasks {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.tasks-item {
+	padding: 10px 20px;
+	width: 850px;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: left;
+}
+
+.tasks-item[open] {
+	.fa-caret-right {
+		rotate: 90deg;
+	}
+	.tasks-item-summary {
+		border-bottom: 1px solid black;
+		margin-bottom: 10px;
+	}
+}
+
+.tasks-item-summary {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tasks-item-title {
+	display: flex;
+	gap: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.tasks-item-buttons {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.tasks-item-buttons-done {
+	width: 24px;
+	height: 24px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.tasks-item-dates {
+	display: flex;
+	gap: 25px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.tasks-item-comments {
+	text-align: left;
+	padding-left: 20px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-bottom: 20px;
+}
+
+.tasks-item-dates-update-date {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.task-title {
+	margin-top: 35px;
+}
+
+#create-task-comments {
+	border: 1px solid rgb(58, 58, 58);
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	background-color: #4d4d4d67;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.create-task-comments-comment {
+	background-color: transparent;
+}
+
+.comments-title {
+	margin-top: 20px;
+}
+
+.comment-delete {
+	display: inline-block !important;
+}

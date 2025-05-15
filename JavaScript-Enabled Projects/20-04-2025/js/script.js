@@ -57,7 +57,7 @@ const updateTitle = () => {
 			.then((response) => response.json())
 			.then((data) => {});
 	} else {
-		doc.getElementById("error-message").className = "error-message shown";
+		doc.getElementById("task-title-error-message").className = "error-message shown";
 	}
 };
 confirmTitleEdit.addEventListener("click", updateTitle);
@@ -73,6 +73,7 @@ const getData = () => {
 
 				const summary = doc.createElement("summary");
 				summary.className = "tasks-item-summary";
+				summary.title = task.title;
 				details.appendChild(summary);
 
 				/********* Set task Title ************/
@@ -82,19 +83,24 @@ const getData = () => {
 
 				const icon = doc.createElement("i");
 				icon.className = "fa fa-caret-right";
+				icon.title = "Развернуть";
 				icon.setAttribute("aria-hidden", "true");
 				span.appendChild(icon);
 
 				const taskName = doc.createElement("span");
 				taskName.textContent = task.title;
 				span.appendChild(taskName);
+				/*************************************/
 
+				/******** Set task Buttons ***********/
 				const buttonSpan = doc.createElement("span");
 				buttonSpan.className = "tasks-item-buttons";
 				summary.appendChild(buttonSpan);
 
 				const buttonEdit = doc.createElement("button");
-				buttonEdit.className = "tasks-item-buttons-edit";
+				buttonEdit.className = "tasks-item-buttons-edit icon-button";
+				buttonEdit.title = "Изменить";
+				buttonEdit.type = "button";
 				buttonSpan.appendChild(buttonEdit);
 				buttonEdit.id = task.id;
 				buttonEdit.addEventListener("click", taskEdit);
@@ -105,8 +111,10 @@ const getData = () => {
 				buttonEdit.appendChild(editIcon);
 
 				const buttonDelete = doc.createElement("button");
-				buttonDelete.className = "tasks-item-buttons-delete";
+				buttonDelete.className = "tasks-item-buttons-delete icon-button";
 				buttonDelete.id = task.id;
+				buttonDelete.title = "Удалить";
+				buttonDelete.type = "button";
 				buttonSpan.appendChild(buttonDelete);
 				buttonDelete.addEventListener("click", deleteTask);
 
@@ -119,6 +127,7 @@ const getData = () => {
 				checkBox.type = "checkbox";
 				checkBox.className = "tasks-item-buttons-done";
 				checkBox.id = `task-${task.id}`;
+				checkBox.title = "Выполнено";
 				buttonSpan.appendChild(checkBox);
 				/***************************************/
 

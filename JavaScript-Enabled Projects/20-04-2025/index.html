@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="icon/x-icon" href="../../rep-imgs/favicon.jpg">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/specific-style.css">
+  <link rel="stylesheet" href="./css/generic-style.css">
+
   <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,128 +19,134 @@
 </head>
 
 <body>
-  <h1 class="title">
+  <h1>
     Мои Задачи
   </h1>
-  <nav class="date-selection">
-    <ul class="date-selection-ul">
-      <li class="date-selection-li">
-        <button class="today" id="today">
-          Сегодня
-        </button>
-      </li>
-      <li class="date-selection-li">
-        <button class="tomorrow" id="tomorrow">
-          Завтра
-        </button>
-      </li>
-      <li class="date-selection-li">
-        <button class="week" id="week">
-          Неделя
-        </button>
-      </li>
-      <li class="date-selection-li">
-        <button class="month" id="month">
-          Месяц
-        </button>
-      </li>
-    </ul>
-  </nav>
 
-  <div class="tasks" id="tasks">
-    <details class="tasks-item">
-      <summary class="tasks-item-summary">
-        <span class="tasks-item-title">
-          <i class="fa fa-caret-right" aria-hidden="true"></i>
-          <span>Задача</span>
-        </span>
-        <span class="tasks-item-buttons">
-          <button class="tasks-item-buttons-edit">
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-          </button>
-          <button class="tasks-item-buttons-delete">
-            <i class="fa fa-window-close-o" aria-hidden="true"></i>
-          </button>
-          <input type="checkbox" class="tasks-item-buttons-done">
-        </span>
-      </summary>
-      <div class="tasks-item-dates">
-        <span class="tasks-item-dates-creation">
-          Дата создания
-        </span>
-        <span class="tasks-item-dates-deadline">
-          Дедлайн
-        </span>
-        <span class="tasks-item-dates-completion">
-          Дата выполнения
-        </span>
-        <span class="tasks-item-dates-update-date">
-          Дата обновления
-        </span>
-      </div>
-      <ul class="tasks-item-comments">
-        <li class="tasks-item-comments-comment">
-          Комментарий 1
-        </li>
-        <li class="tasks-item-comments-comment">
-          Комментарий 2
-        </li>
-      </ul>
+  <main class="main-view">
+    <div class="tasks" id="tasks">
+      <nav>
+        <ul class="date-selection-ul">
+          <li class="date-selection-li">
+            <button class="today main-button" id="today" title="Сегодня" type="button">
+              Сегодня
+            </button>
+          </li>
+          <li class="date-selection-li">
+            <button class="tomorrow main-button" id="tomorrow" title="Завтра" type="button">
+              Завтра
+            </button>
+          </li>
+          <li class="date-selection-li">
+            <button class="week main-button" id="week" title="Неделя" type="button">
+              Неделя
+            </button>
+          </li>
+          <li class="date-selection-li">
+            <button class="month main-button" id="month" title="Месяц" type="button">
+              Месяц
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <details class="tasks-item">
+        <summary class="tasks-item-summary">
+          <span class="tasks-item-title">
+            <i class="fa fa-caret-right" aria-hidden="true" title="Развернуть"></i>
+            <span>Задача</span>
+          </span>
+          <span class="tasks-item-buttons">
+            <button class="tasks-item-buttons-edit icon-button" title="Изменить" type="button">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </button>
+            <button class="tasks-item-buttons-delete icon-button" title="Удалить" type="button">
+              <i class="fa fa-window-close-o" aria-hidden="true"></i>
+            </button>
+            <input type="checkbox" class="tasks-item-buttons-done" title="Выполнено">
+          </span>
+        </summary>
+        <div class="tasks-item-dates">
+          <span class="tasks-item-dates-creation">
+            Дата создания
+          </span>
+          <span class="tasks-item-dates-deadline">
+            Дедлайн
+          </span>
+          <span class="tasks-item-dates-completion">
+            Дата выполнения
+          </span>
+          <span class="tasks-item-dates-update-date">
+            Дата обновления
+          </span>
+        </div>
+        <ul class="tasks-item-comments">
+          <li class="tasks-item-comments-comment">
+            Комментарий 1
+          </li>
+          <li class="tasks-item-comments-comment">
+            Комментарий 2
+          </li>
+        </ul>
 
-    </details>
-  </div>
-  <button class="create-new-task" id="create-new-task">
+      </details>
+    </div>
+    <iframe
+      src="https://calendar.google.com/calendar/embed?height=650&wkst=2&ctz=Europe%2FRome&showCalendars=0&showTz=0&showPrint=0&mode=WEEK&src=YXJzZG9tMTVAZ21haWwuY29t&src=cnUucnVzc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23009688"
+      class="calendar" frameborder="0" scrolling="no" title="calendar">
+    </iframe>
+  </main>
+
+  <button class="main-button" id="create-new-task" type="button" title="Новая Задача">
     Добавить новую Задачу
   </button>
-  <!-- Закончить Модальные Окна, все что можно объединить для них всех,
-    сделать список комментариев, сделать кнопку удаления комментариев,
-     сделать еще одну форму с инпутом и кнопкой для комментариев -->
-  <dialog class="create-task" id="create-task">
-    <form class="create-task-form" method="dialog">
-      <button type="button" id="create-task-close-modal">
+
+  <dialog class="modal" id="create-task">
+    <form class="modal-form" method="dialog">
+      <button class="modal-icon-button close-modal" type="button" id="create-task-close-modal">
         <i class="fa fa-window-close-o" aria-hidden="true"></i>
       </button>
-      <label for="create-task-title-input" id="create-task-title-name">
+      <label class="modal-input-label task-title" for="create-task-title-input" id="create-task-title-name">
         Название
       </label>
-      <input type="text" id="create-task-title-input">
-      <span class="error-message hidden" id="error-message">
+      <input class="modal-input" type="text" id="create-task-title-input">
+      <span class="error-message hidden" id="task-title-error-message">
         Это поле не должно быть пустым!
       </span>
-      <button type="button" class="create-task-title-confirm" id="create-task-title-confirm">
+      <button type="button" class="modal-icon-button" id="create-task-title-confirm">
         <i class="fa fa-check-square" aria-hidden="true"></i>
       </button>
       <ul class="create-task-comments" id="create-task-comments">
         <li class="create-task-comments-comment" id="create-task-comments-comment-1">
           Комментарий 1
-          <button id="create-task-comments-comment-delete-1" type="button">
+          <button class="modal-icon-button comment-delete" id="create-task-comments-comment-delete-1" type="button">
             <i class="fa fa-window-close-o" aria-hidden="true"></i>
           </button>
         </li>
         <li class="create-task-comments-comment" id="create-task-comments-comment-2">
           Комментарий 2
-          <button id="create-task-comments-comment-delete-2" type="button">
+          <button class="modal-icon-button comment-delete" id="create-task-comments-comment-delete-2" type="button">
             <i class="fa fa-window-close-o" aria-hidden="true"></i>
           </button>
         </li>
         <li class="create-task-comments-comment" id="create-task-comments-comment-3">
           Комментарий 3
-          <button id="create-task-comments-comment-delete-3" type="button">
+          <button class="modal-icon-button comment-delete" id="create-task-comments-comment-delete-3" type="button">
             <i class="fa fa-window-close-o" aria-hidden="true"></i>
           </button>
         </li>
       </ul>
     </form>
-    <form class="create-task-form-comments">
-      <label for="create-task-form-comments-comment" class="create-task-form-comments-comment-title">
-        Добавить Комментарий
+    <form class="modal-form"><!--create-task-form-comments>-->
+      <label class="modal-input-label comments-title" for="create-task-form-comments-comment">
+        Добавить комментарий
       </label>
-      <input type="text" class="create-task-form-comments-comment" id="create-task-form-comments-comment">
-      <button type="button" class="create-task-form-comments-complete" id="create-task-form-comments-complete">
+      <input type="text" class="modal-input" id="create-task-form-comments-comment">
+      <button type="button" class="modal-icon-button" id="create-task-form-comments-complete">
         <i class="fa fa-check-square" aria-hidden="true"></i>
       </button>
     </form>
   </dialog>
+
 </body>
 
 <script src="./js/script.js"></script>
