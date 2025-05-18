@@ -9,12 +9,13 @@
 .tasks {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	width: 45vw;
 	gap: 20px;
 }
 
 .tasks-item {
 	padding: 10px 20px;
-	width: 850px;
 	border: 1px solid black;
 	border-radius: 10px;
 	text-align: left;
@@ -82,7 +83,7 @@
 	margin-top: 35px;
 }
 
-#create-task-comments {
+#edit-task-comments {
 	border: 1px solid rgb(58, 58, 58);
 	border-radius: 5px;
 	margin-top: 15px;
@@ -95,11 +96,12 @@
 	letter-spacing: 1px;
 }
 
-.create-task-comments-comment {
+.edit-task-comments-comment {
 	background-color: transparent;
 }
 
-.comments-title {
+.comments-title,
+.deadline-input {
 	margin-top: 20px;
 }
 

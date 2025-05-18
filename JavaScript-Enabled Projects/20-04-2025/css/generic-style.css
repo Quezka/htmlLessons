@@ -88,7 +88,7 @@ button {
 	backdrop-filter: blur(4px);
 	border-radius: 20px;
 	padding: 20px;
-	position: relative;
+	position: fixed;
 	text-align: left;
 }
 .modal::backdrop {

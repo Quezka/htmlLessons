@@ -1,11 +1,26 @@
 const doc = document;
 const cont = doc.getElementById("tasks");
-const editModal = doc.getElementById("create-task");
-const taskEditTitle = doc.getElementById("create-task-title-input");
-const confirmTitleEdit = doc.getElementById("create-task-title-confirm");
-const closeEditModal = doc.getElementById("create-task-close-modal");
+const editModal = doc.getElementById("edit-task");
+const taskEditTitle = doc.getElementById("edit-task-title-input");
+const confirmTitleEdit = doc.getElementById("edit-task-title-confirm");
+const closeEditModal = doc.getElementById("edit-task-close-modal");
+
+const createTaskModal = doc.getElementById("create-task");
+const createTaskModalConfirm = doc.getElementById("create-task-confirm");
+const createTaskModalDate = doc.getElementById("create-task-deadline-input");
+
 const url = "http://localhost:3000";
 let currentTaskId = 0;
+
+const date = () => {
+	const time = new Date();
+
+	return `${time.getFullYear()}-${time.getMonth()}-${time.getDate()}`;
+};
+
+createTaskModalConfirm.addEventListener("click", () => {
+	console.log(date());
+});
 
 const enumerateDates = (i) => {
 	const list = ["Создана: ", "До: ", "Выполнена: ", "Обновлена: "];
@@ -44,7 +59,8 @@ const closeModal = () => {
 closeEditModal.addEventListener("click", closeModal);
 
 const updateTitle = () => {
-	if (taskEditTitle.value.trim() != "") {
+	task = getTask(currentTaskId);
+	if (taskEditTitle.value.trim() != "" && taskEditTitle.value != task.title) {
 		fetch(`${url}/tasks/${currentTaskId}`, {
 			method: "PATCH",
 			headers: {
@@ -52,6 +68,7 @@ const updateTitle = () => {
 			},
 			body: JSON.stringify({
 				title: taskEditTitle.value.trim(),
+				dates: { created_at: task.dates[created_at], due_date: task.dates[due_date], completed_at: task.dates[completed_at], update_date: date() },
 			}),
 		})
 			.then((response) => response.json())
@@ -185,6 +202,6 @@ const getComments = () => {
 		});
 };
 
-getComments();
-
 getData();
+
+createTaskModal.showModal();

@@ -100,48 +100,67 @@
     Добавить новую Задачу
   </button>
 
-  <dialog class="modal" id="create-task">
+  <dialog class="modal" id="edit-task">
     <form class="modal-form" method="dialog">
-      <button class="modal-icon-button close-modal" type="button" id="create-task-close-modal">
+      <button class="modal-icon-button close-modal" type="button" id="edit-task-close-modal">
         <i class="fa fa-window-close-o" aria-hidden="true"></i>
       </button>
-      <label class="modal-input-label task-title" for="create-task-title-input" id="create-task-title-name">
+      <label class="modal-input-label task-title" for="edit-task-title-input" id="edit-task-title-name">
         Название
       </label>
-      <input class="modal-input" type="text" id="create-task-title-input">
+      <input class="modal-input" type="text" id="edit-task-title-input">
       <span class="error-message hidden" id="task-title-error-message">
         Это поле не должно быть пустым!
       </span>
-      <button type="button" class="modal-icon-button" id="create-task-title-confirm">
+      <button type="button" class="modal-icon-button" id="edit-task-title-confirm">
         <i class="fa fa-check-square" aria-hidden="true"></i>
       </button>
-      <ul class="create-task-comments" id="create-task-comments">
-        <li class="create-task-comments-comment" id="create-task-comments-comment-1">
+      <ul class="edit-task-comments" id="edit-task-comments">
+        <li class="edit-task-comments-comment" id="edit-task-comments-comment-1">
           Комментарий 1
-          <button class="modal-icon-button comment-delete" id="create-task-comments-comment-delete-1" type="button">
+          <button class="modal-icon-button comment-delete" id="edit-task-comments-comment-delete-1" type="button">
             <i class="fa fa-window-close-o" aria-hidden="true"></i>
           </button>
         </li>
-        <li class="create-task-comments-comment" id="create-task-comments-comment-2">
+        <li class="edit-task-comments-comment" id="edit-task-comments-comment-2">
           Комментарий 2
-          <button class="modal-icon-button comment-delete" id="create-task-comments-comment-delete-2" type="button">
+          <button class="modal-icon-button comment-delete" id="edit-task-comments-comment-delete-2" type="button">
             <i class="fa fa-window-close-o" aria-hidden="true"></i>
           </button>
         </li>
-        <li class="create-task-comments-comment" id="create-task-comments-comment-3">
+        <li class="edit-task-comments-comment" id="edit-task-comments-comment-3">
           Комментарий 3
-          <button class="modal-icon-button comment-delete" id="create-task-comments-comment-delete-3" type="button">
+          <button class="modal-icon-button comment-delete" id="edit-task-comments-comment-delete-3" type="button">
             <i class="fa fa-window-close-o" aria-hidden="true"></i>
           </button>
         </li>
       </ul>
     </form>
-    <form class="modal-form"><!--create-task-form-comments>-->
-      <label class="modal-input-label comments-title" for="create-task-form-comments-comment">
+    <form class="modal-form"><!--edit-task-form-comments>-->
+      <label class="modal-input-label comments-title" for="edit-task-form-comments-comment">
         Добавить комментарий
       </label>
-      <input type="text" class="modal-input" id="create-task-form-comments-comment">
-      <button type="button" class="modal-icon-button" id="create-task-form-comments-complete">
+      <input type="text" class="modal-input" id="edit-task-form-comments-comment">
+      <button type="button" class="modal-icon-button" id="edit-task-form-comments-complete">
+        <i class="fa fa-check-square" aria-hidden="true"></i>
+      </button>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="create-task">
+    <form method="dialog" class="modal-form">
+      <button class="modal-icon-button close-modal" type="button" id="create-task-close-modal">
+        <i class="fa fa-window-close-o" aria-hidden="true"></i>
+      </button>
+      <label for="create-task-title-input" class="modal-input-label task-title">
+        Название
+      </label>
+      <input type="text" class="modal-input" id="create-task-title-input">
+      <label for="create-task-deadline-input" class="modal-input-label deadline-input">
+        Дедлайн
+      </label>
+      <input type="date" class="modal-input" id="create-task-deadline-input">
+      <button type="button" class="modal-icon-button" id="create-task-confirm">
         <i class="fa fa-check-square" aria-hidden="true"></i>
       </button>
     </form>
