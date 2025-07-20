@@ -58,8 +58,8 @@ const closeModal = () => {
 };
 closeEditModal.addEventListener("click", closeModal);
 
-const updateTitle = () => {
-	task = getTask(currentTaskId);
+const updateTitle = async () => {
+	task = await getTask(currentTaskId);
 	if (taskEditTitle.value.trim() != "" && taskEditTitle.value != task.title) {
 		fetch(`${url}/tasks/${currentTaskId}`, {
 			method: "PATCH",
@@ -68,7 +68,7 @@ const updateTitle = () => {
 			},
 			body: JSON.stringify({
 				title: taskEditTitle.value.trim(),
-				dates: { created_at: task.dates[created_at], due_date: task.dates[due_date], completed_at: task.dates[completed_at], update_date: date() },
+				dates: { created_at: task.dates["created_at"], due_date: task.dates["due_date"], completed_at: task.dates["completed_at"], update_date: date() },
 			}),
 		})
 			.then((response) => response.json())
@@ -204,4 +204,4 @@ const getComments = () => {
 
 getData();
 
-createTaskModal.showModal();
+/* createTaskModal.showModal(); */
